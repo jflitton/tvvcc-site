@@ -8,7 +8,7 @@ disableHugoGeneratorInject = true
   subtitle = "An open club for vintage computing enthusiasts in Boise, Idaho"
   keywords = "Boise, retro, vintage, computer, computing, gaming, electronics"
   discordURL = "https://discord.gg/QHU4cwrSTt"
-  welcomeText = """The Treasure Valley Vintage Computing Club is a Boise-area collective of vintage computing enthusiasts. Founded in 2025, the TVVCC meets every second Wednesday at 6:00 PM in the BSU Computer Science department in downtown Boise.<BR><BR>Our members join for lots of reasons including:<UL><LI>Sharing projects and builds<LI>Getting help with vintage hardware and software<LI>Buying, selling, and trading misfit computers<LI>Connecting with fellow retro computing fans</UL>Membership is free and open to the public. Join our <A HREF="https://discord.gg/QHU4cwrSTt">Discord</A> for more information!"""
+  welcomeText = """The Treasure Valley Vintage Computing Club is a Boise-area collective of vintage computing enthusiasts. Founded in 2025, the TVVCC offers an online community and in-person events.  Our members join for lots of reasons, including:<UL><LI>Connecting with fellow retro computing fans<LI>Sharing projects/builds<LI>Getting help with vintage hardware and software<LI>Buying, selling, and trading misfit computers</UL>Membership is free and open to the public. Join our <A HREF="https://discord.gg/QHU4cwrSTt">Discord</A> for more information!"""
 
 [pagination]
   pagerSize = 10
