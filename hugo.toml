@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Treasure Valley Vintage Computing Club'
 theme = '1995'
 disableHugoGeneratorInject = true
+buildFuture = true
 
 [params]
   subtitle = "An open club for vintage computing enthusiasts in the Boise, Idaho area"
