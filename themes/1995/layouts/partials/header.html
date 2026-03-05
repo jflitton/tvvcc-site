@@ -1,17 +1,19 @@
 <HTML LANG="{{ .Site.LanguageCode | default "en" }}">
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
 <TITLE>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</TITLE>
 <META NAME="description" CONTENT="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.subtitle }}{{ . }}{{ end }}{{ end }}">
 {{ with .Site.Params.keywords }}<META NAME="keywords" CONTENT="{{ . }}">{{ end }}
 <LINK REL="canonical" HREF="{{ .Permalink }}">
+<LINK REL="stylesheet" HREF="/css/modern.css">
 {{ template "_internal/opengraph.html" . }}
 {{ partial "jsonld.html" . }}
 </HEAD>
 <BODY BGCOLOR="#C0C0C0" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
 
 <CENTER>
-<a href="/"><img src="/images/tvvcc.gif" alt="TVVCC Logo" width="25%" max-width="599px"></a>
+<a href="/"><img src="/images/tvvcc.gif" alt="TVVCC Logo" width="25%"></a>
 <H1>{{ .Site.Title }}</H1>
 <I>{{ .Site.Params.subtitle }}</I>
 </CENTER>

@@ -1,0 +1,10 @@
+/* Modern browser enhancements — ignored by vintage browsers */
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+img[alt="TVVCC Logo"] {
+  max-width: 600px;
+  width: 80%;
+}
