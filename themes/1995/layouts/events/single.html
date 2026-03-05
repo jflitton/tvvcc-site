@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+<H2>{{ .Title }}</H2>
+
+<FONT SIZE="2">
+<I>{{ .Date.Format "January 2, 2006" }}, {{ .Date.Format "3:04 PM" }}{{ with .Params.endDate }} - {{ (time .).Format "3:04 PM" }}{{ end }}</I>
+{{ with .Params.location }}<BR><I>{{ . }}</I>{{ end }}
+</FONT>
+
+<HR NOSHADE SIZE="1">
+
+{{ .Content }}
+
+<HR NOSHADE SIZE="1">
+
+<P>
+<A HREF="/events/">&lt;&lt; Back to Events</A>
+</P>
+
+{{ partial "footer.html" . }}

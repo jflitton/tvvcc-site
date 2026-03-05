@@ -9,17 +9,18 @@
 
 <HR NOSHADE>
 
-<H2>Latest Posts</H2>
+{{ $events := where (where .Site.RegularPages "Section" "events") ".Date" ">=" now }}
+{{ if $events }}
+<H2>Upcoming Events</H2>
 
-{{ $posts := where .Site.RegularPages "Section" "posts" }}
-{{ if $posts }}
 <UL>
-{{ range first 10 $posts }}
-<LI><A HREF="{{ .RelPermalink }}"><B>{{ .Title }}</B></A> - <I>{{ .Date.Format "January 2, 2006" }}</I>
+{{ range $events }}
+<LI><A HREF="{{ .RelPermalink }}"><B>{{ .Title }}</B></A> - <I>{{ .Date.Format "January 2, 2006" }}, {{ .Date.Format "3:04 PM" }}</I>
+{{ with .Params.location }}<BR><FONT SIZE="2">{{ . }}</FONT>{{ end }}
 {{ end }}
 </UL>
-{{ else }}
-<P><I>No posts yet. Check back soon!</I></P>
+
+<HR NOSHADE>
 {{ end }}
 
 {{ partial "footer.html" . }}
