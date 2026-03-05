@@ -9,6 +9,7 @@ buildFuture = true
   subtitle = "An open club for vintage computing enthusiasts in the Boise, Idaho area"
   keywords = "Boise, retro, vintage, computer, computing, gaming, electronics"
   discordURL = "https://discord.gg/QHU4cwrSTt"
+  contactEmail = "info@tvvcc.org"
   welcomeText = """The Treasure Valley Vintage Computing Club is a Boise-area group of vintage computing enthusiasts. Founded in 2025, the TVVCC offers an online community and in-person events.  Our members join for lots of reasons, including:<UL><LI>Connecting with fellow retro computing fans<LI>Sharing projects/builds<LI>Getting help with vintage hardware and software<LI>Buying, selling, and trading misfit computers/components</UL>Membership is free and open to the public. Join our <A HREF="https://discord.gg/QHU4cwrSTt">Discord</A> for more information!"""
 
 [markup]

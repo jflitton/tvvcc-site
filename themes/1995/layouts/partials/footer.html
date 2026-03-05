@@ -3,6 +3,7 @@
 
 <CENTER>
 &copy; {{ now.Year }} {{ .Site.Title }}<BR>
+{{ with .Site.Params.contactEmail }}<A HREF="mailto:{{ . }}">{{ . }}</A><BR>{{ end }}
 <I>Best viewed with any ancient or modern browser you want!</I>
 </CENTER>
 

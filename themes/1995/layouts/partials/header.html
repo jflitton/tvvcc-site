@@ -23,6 +23,8 @@
 <A HREF="/events/">Events</A>
 {{ with .Site.Params.discordURL }}|
 <A HREF="{{ . }}">Discord</A>{{ end }}
+{{ with .Site.Params.contactEmail }}|
+<A HREF="mailto:{{ . }}">Contact</A>{{ end }}
 </CENTER>
 
 <HR>
