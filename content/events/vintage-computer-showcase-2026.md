@@ -16,4 +16,4 @@ Join us for the Treasure Valley Vintage Computing Club's first Vintage Computer 
 
 This is a free, open-to-the-public event. Whether you're a seasoned collector or just curious about the computers of yesteryear, there's something for everyone.
 
-Have questions? Join our <A HREF="https://discord.gg/QHU4cwrSTt">Discord</A> for more details!
+Have questions? Join our <A HREF="https://discord.gg/QHU4cwrSTt">Discord</A> or email us at <A HREF="mailto:info@tvvcc.org">info@tvvcc.org</A> for more details!
