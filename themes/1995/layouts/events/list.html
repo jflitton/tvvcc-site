@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+
+<H2>{{ .Title }}</H2>
+
+{{ $upcoming := where .Pages ".Date" ">=" now }}
+{{ $past := where .Pages ".Date" "<" now }}
+
+{{ if $upcoming }}
+<H3>Upcoming Events</H3>
+<UL>
+{{ range $upcoming.ByDate }}
+<LI><A HREF="{{ .RelPermalink }}"><B>{{ .Title }}</B></A> - <I>{{ .Date.Format "January 2, 2006" }}, {{ .Date.Format "3:04 PM" }}</I>
+{{ with .Params.location }}<BR><FONT SIZE="2">{{ . }}</FONT>{{ end }}
+{{ end }}
+</UL>
+{{ end }}
+
+{{ if $past }}
+<H3>Past Events</H3>
+<UL>
+{{ range $past.ByDate.Reverse }}
+<LI><A HREF="{{ .RelPermalink }}"><B>{{ .Title }}</B></A> - <I>{{ .Date.Format "January 2, 2006" }}</I>
+{{ with .Params.location }}<BR><FONT SIZE="2">{{ . }}</FONT>{{ end }}
+{{ end }}
+</UL>
+{{ end }}
+
+{{ if and (not $upcoming) (not $past) }}
+<P><I>Nothing here yet.</I></P>
+{{ end }}
+
+{{ partial "footer.html" . }}
